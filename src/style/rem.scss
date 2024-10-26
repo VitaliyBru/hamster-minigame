@@ -1,0 +1,14 @@
+html {
+  font-size: calc(10px * 100vw / 1080px);
+}
+
+@media (min-width: 580px) {
+  html {
+    font-size: calc(10px * 580px / 1080px);
+  }
+
+  #root {
+    width: 580px;
+    margin: 0 calc(50vw - 290px);
+  }
+}

@@ -1,0 +1,80 @@
+.candel {
+  position: absolute;
+  border-radius: 3px;
+  transform: scale(0.97);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+  }
+
+  &__horizontal {
+    background-color: rgba(0, 255, 0, 0.35);
+    height: calc(100% / 6);
+    border: rgba($color: #00ff00, $alpha: 0.25) solid 2px;
+
+    &--2 {
+      width: calc(100% / 3);
+    }
+
+    &--3 {
+      width: 50%;
+    }
+
+    &::before {
+      width: calc(100% - 6px);
+      height: 20%;
+      top: 40%;
+      left: 3px;
+      background-color: rgba($color: #00ff00, $alpha: 1);
+    }
+
+    &::after {
+      width: calc(100% - 32px);
+      height: calc(100% - 28px);
+      top: 14px;
+      left: 16px;
+      background-color: rgba($color: #00ff00, $alpha: 1);
+    }
+  }
+
+  &__vertical {
+    background-color: rgba(255, 0, 0, 0.35);
+    width: calc(100% / 6);
+    border: rgba($color: #ff0000, $alpha: 0.25) solid 2px;
+
+    &--2 {
+      height: calc(100% / 3);
+    }
+
+    &--3 {
+      height: 50%;
+    }
+
+    &::before {
+      width: 20%;
+      height: calc(100% - 6px);
+      top: 3px;
+      left: 40%;
+      background-color: rgba($color: #ff0000, $alpha: 1);
+    }
+
+    &::after {
+      width: calc(100% - 28px);
+      height: calc(100% - 32px);
+      top: 16px;
+      left: 14px;
+      background-color: rgba($color: #ff0000, $alpha: 1);
+    }
+  }
+
+  &__key {
+    background: url('../../img/key.png');
+    background-size: cover;
+    background-color: rgba(255, 255, 0, 0.35);
+    height: calc(100% / 6);
+    border: rgba($color: #ffff00, $alpha: 0.25) solid 2px;
+    width: calc(100% / 3);
+  }
+}

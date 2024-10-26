@@ -1,0 +1,9 @@
+@import '../../style/variabels.scss';
+@import '../../style/mixins.scss';
+
+.app {
+  padding: 16.7rem 2rem 0;
+  background-color: $backgraund-black;
+  color: $text-color;
+  min-height: 100vh;
+}
